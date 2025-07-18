@@ -13,6 +13,46 @@
   font-family: "Segoe UI", Roboto, sans-serif;
 }
 
+/* —— Base outline‑button style —— */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid var(--accent-color);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--accent-color);
+  transition: background var(--transition), color var(--transition), opacity var(--transition);
+}
+.btn:hover {
+  background: var(--accent-color);
+  color: var(--white);
+  opacity: 1;
+}
+
+/* —— Filled variation —— */
+.btn.primary {
+  background: var(--accent-color);
+  color: var(--white);
+}
+.btn.primary:hover {
+  background: transparent;
+  color: var(--accent-color);
+}
+
+/* —— Outline variation —— */
+.btn.outline {
+  background: transparent;
+  color: var(--white);
+  border-color: var(--white);
+}
+.btn.outline:hover {
+  background: var(--white);
+  color: var(--primary-color);
+}
+
+
 /* GLOBAL RESET */
 * {
   margin: 0;
@@ -189,7 +229,7 @@ body {
 }
 .project-card img {
   width: 100%;
-  height: auto;
+  height: 180px;
   object-fit: cover;
 }
 .project-card h4 {
