@@ -414,6 +414,68 @@ body {
     flex: 1 1 100%;
     max-width: 100%;
   }
+
+  /* NAV */
+  .nav-toggle {
+    display: block;
+    cursor: pointer;
+  }
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: var(--white);
+    border-bottom: 1px solid var(--light-gray);
+  }
+  .site-nav.open {
+    display: flex;
+  }
+  .site-nav a {
+    padding: 1rem;
+    border-top: 1px solid var(--light-gray);
+    margin: 0;
+  }
+
+  /* HERO */
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  .hero-image,
+  .hero-copy {
+    width: 100%;
+  }
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* OVERVIEW / TWO-COL SECTIONS → SINGLE COLUMN */
+  .container.two-col {
+    grid-template-columns: 1fr !important;
+  }
+  .project-grid.two-col {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* MOBILE‑APPS: first two images taller, rest auto */
+  .mobile-apps .project-grid.two-col .project-card:nth-child(-n+2) img {
+    aspect-ratio: 9/19.5;
+    max-height: 400px;
+    object-fit: cover;
+  }
+
+  /* reduce padding/gap */
+  section {
+    padding: 2rem 0;
+  }
+  .container {
+    width: 95%;
+  }
 }
 
 /* center the nav and add separators */
