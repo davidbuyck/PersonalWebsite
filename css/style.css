@@ -516,6 +516,22 @@ body {
     font-size: 0.75rem;
     padding-top: 1rem;
   }
+
+  /* Tame AI & Cloud images on phones */
+  .ai-cloud-services .ai-cloud-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .ai-cloud-services .ai-cloud-images img {
+    width: 100%;
+    height: auto;
+    /* enforce a 16:9 ratio so they’re not too tall */
+    aspect-ratio: 16/9;
+    max-height: 180px;
+    object-fit: cover;
+  }
 }
 
 /* center the nav and add separators */
