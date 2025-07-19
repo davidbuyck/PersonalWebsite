@@ -396,6 +396,17 @@ body {
   .container.two-col {
     grid-template-columns: 1fr;
   }
+  .project-grid.two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .mobile-apps .project-grid.two-col .project-card:nth-child(-n+2) img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 9 / 19.5 !important;
+    object-fit: cover;
+    max-height: 400px;      /* <-- your ceiling, adjust as needed */
+  }
 }
 
 /* center the nav and add separators */
@@ -416,4 +427,43 @@ body {
   content: "|";
   margin-right: 0.5rem;      /* space between bar and link */
   color: var(--light-gray);
+}
+.project-grid.two-col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; /* match your existing gap */
+}
+
+/* in 2‑col grids, let images size by aspect ratio */
+.project-grid.two-col .project-card img {
+  width: 100%;
+  /* remove the old fixed height */
+  height: auto;
+  /* enforce a nice, consistent ratio */
+  aspect-ratio: 4 / 3;
+  /* crop to fill if needed */
+  object-fit: cover;
+}
+
+/* make the first two mobile app images taller */
+.mobile-apps .project-grid.two-col .project-card:nth-child(1) img,
+.mobile-apps .project-grid.two-col .project-card:nth-child(2) img {
+  /* pick a “taller” aspect ratio: width/height */
+  aspect-ratio: 9 / 19.5;
+  object-fit: cover;
+  width: auto;
+  height: 100%;
+}
+
+.mobile-apps .project-grid.two-col 
+  .project-card:nth-child(-n+2) img {
+  width: 100%;
+  height: auto;
+
+  /* keep the phone‑shape */
+  aspect-ratio: 9 / 19.5 !important;
+  object-fit: cover;
+
+  /* stop growing taller than 400px */
+  max-height: 1200px;
 }
