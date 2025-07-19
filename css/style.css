@@ -528,8 +528,8 @@ body {
     width: 100%;
     height: auto;
     /* enforce a 16:9 ratio so they’re not too tall */
-    aspect-ratio: 16/9;
-    max-height: 180px;
+    aspect-ratio: 4/4;
+    max-height: 240px;
     object-fit: cover;
   }
 
