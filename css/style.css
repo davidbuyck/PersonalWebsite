@@ -532,6 +532,20 @@ body {
     max-height: 180px;
     object-fit: cover;
   }
+
+  /* STACK HERO BUTTONS WITH GAP */
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;               /* space between buttons */
+    align-items: center;     /* center them */
+  }
+
+  /* make each button fill a bit more, for rhythm */
+  .hero-buttons .btn {
+    width: 90%;
+    max-width: 300px;
+  }
 }
 
 /* center the nav and add separators */
