@@ -408,11 +408,13 @@ body {
     max-height: 400px;      /* <-- your ceiling, adjust as needed */
   }
   .ai-cloud-images {
-    flex-direction: column;
+    flex-direction: column;    /* Stack vertically on mobile */
   }
+
   .ai-cloud-images img {
-    flex: 1 1 100%;
-    max-width: 100%;
+    width: 60%;               /* Control image size */
+    max-width: 200px;         /* Prevent images from being too large */
+    margin: 0 auto;           /* Center images horizontally */
   }
 
   /* NAV */
