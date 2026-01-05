@@ -1,127 +1,224 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>David R. Buyck | XR, AI & Medical Simulations</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>David Buyck | Founder of AstrumArc</title>
+  <meta name="description" content="David Buyck — Founder & CEO of AstrumArc. Software Architect. Researcher. Builder of real systems spanning XR, AI, simulation, and real-world medical workflows." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preload" as="image" href="img/DavidCosmosHero.webp" type="image/webp" fetchpriority="high">
 </head>
+
 <body>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="/">
+          <div class="brandMark" aria-hidden="true"></div>
+          <div class="brandName">David Buyck</div>
+        </a>
 
-  <!-- Header / Navigation -->
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="logo">David R. Buyck</div>
-      <nav class="site-nav">
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="https://scholar.google.com/citations?user=vrVNoZYAAAAJ&hl=en">Publications</a>
-        <a href="https://astrumarc.com/" class="cta">Contact</a>
-      </nav>
-      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-    </div>
-  </header>
+        <nav class="navlinks" aria-label="Primary">
+          <a href="#top">Overview</a>
+          <a href="work/">Work & Research</a>
+          <a href="https://astrumarc.com/" target="_blank" rel="noopener">AstrumArc</a>
+        </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-image">
-        <img src="images/Portrait.JPG" alt="David Buyck speaking at podium">
+        <div class="navcta">
+          <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+          </button>
+          <a class="btn primary" href="https://astrumarc.com/" target="_blank" rel="noopener">Visit AstrumArc</a>
+        </div>
       </div>
-      <div class="hero-copy">
-        <h1>David R. Buyck</h1>
-        <h2>Expert in XR, AI &amp; Medical Simulations</h2>
-        <p>Transforming global healthcare through cutting-edge medical simulations and immersive XR technologies.</p>
-        <div class="hero-buttons">
-          <a href="projects.html" class="btn primary">Explore My Work</a>
-          <a href="https://astrumarc.com/" class="btn outline">Request a Demo</a>
+
+      <div class="mobilemenu" id="mobilemenu" aria-label="Mobile menu">
+        <a href="#top">Overview</a>
+        <a href="work/">Work & Research</a>
+        <a href="https://astrumarc.com/" target="_blank" rel="noopener">AstrumArc</a>
+        <div class="row">
+          <a class="btn ghost" style="flex:1" href="work/">Work & Research</a>
+          <a class="btn primary" href="https://astrumarc.com/" target="_blank" rel="noopener">Visit AstrumArc</a>
         </div>
       </div>
     </div>
-  </section>
+  </header>
 
-  <!-- Brief Overview -->
-  <section class="overview container">
-    <p>
-      As Founder and CEO of AstrumArc LLC and Lead Software Engineer at the University of Minnesota’s Visible Heart Lab, I architect advanced educational solutions leveraging XR, AI, and cloud technologies. My innovative simulations and tools enhance training for physicians and medical device companies worldwide, significantly improving patient care.
-    </p>
-    <a href="about.html" class="read-more">Read Full Bio →</a>
-  </section>
+  <main id="top">
+    <section class="heroDark heroBgImage">
+      <div class="wrap">
+        <div class="heroGrid">
+          <div class="heroCopy">
+            <div class="kicker"><span class="dot"></span> Founder & CEO of AstrumArc</div>
+            <h1>David Buyck<br><span class="em">Software Architect • Researcher • Builder of real systems.</span></h1>
+            <p class="sub">
+              I design and ship advanced software spanning XR, AI, simulation, and real-world medical workflows.
+            </p>
 
-  <!-- Highlighted Roles -->
-  <section id="experience" class="roles container">
-    <div class="role-card">
-      <h3>AstrumArc LLC</h3>
-      <h4>Founder &amp; CEO</h4>
-      <p>Innovating immersive, scalable educational simulators and AI-powered healthcare applications.</p>
-      <a href="https://astrumarc.com/" class="link">View AstrumArc →</a>
-    </div>
-    <div class="role-card">
-      <h3>University of Minnesota – Visible Heart Lab</h3>
-      <h4>Lead Software Engineer &amp; Developer</h4>
-      <p>Creating and leading development of state-of-the-art medical training simulations and educational platforms.</p>
-      <a href="https://med.umn.edu/vhlab/resources" class="link">View applications →</a>
-    </div>
-  </section>
+            <div class="heroActions">
+              <a class="btn primary" href="https://astrumarc.com/" target="_blank" rel="noopener">Explore AstrumArc</a>
+              <a class="btn heroSecondary" href="#arc">Read the arc</a>
+            </div>
 
-  <!-- Featured Projects -->
-  <section id="projects" class="projects container">
-    <h2>Featured Projects &amp; Simulations</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <img src="images/CHDFeature.png" alt="Cardiac Pro MD Suite">
-        <h4>Cardiac Pro MD Suite</h4>
-        <p>A suite of interactive cardiac education apps across XR, mobile, and web platforms.</p>
-        <a href="https://cardiacpromd.com/" class="btn small">Discover Cardiac Pro MD →</a>
-      </div>
-      <div class="project-card">
-        <img src="images/GlobalVR.png" alt="GlobalVR">
-        <h4>GlobalVR</h4>
-        <p>A revolutionary multi-user global VR platform integrated into Cardiac Pro MD, designed for real-time collaborative training, medical education, and procedural simulations.</p>
-        <a href="projects.html" class="btn small">Explore GlobalVR →</a>
-      </div>
-      <div class="project-card">
-        <img src="images/UniverseSimulator.jpg" alt="Universe Simulator">
-        <h4>Universe Simulator</h4>
-        <p>A scientifically accurate universe simulation using NASA data, providing realistic interstellar exploration.</p>
-        <a href="projects.html" class="btn small">Explore the Universe →</a>
-      </div>
-    </div>
-  </section>
+            <div class="heroTags" aria-label="Focus areas">
+              <span class="tag">XR / VR / AR</span>
+              <span class="tag">AI + Automation</span>
+              <span class="tag">Medical Simulation</span>
+              <span class="tag">Real-Time Systems</span>
+            </div>
 
-  <!-- Research Teaser -->
-  <section id="publications" class="publications-teaser container">
-    <h2>Research &amp; Publications</h2>
-    <p>My work is featured prominently in leading journals and international medical conferences:</p>
-    <ul>
-      <li><em>Current Opinion in Physiology</em>: Virtual Reality in Physiology Teaching (2025)</li>
-      <li><em>EuroPCR 2025</em>: Live DK Crush Stenting Simulation</li>
-      <li><em>Heart Rhythm Society 2025</em>: VR Simulator for Bachmann’s Bundle Lead Placement</li>
-    </ul>
-    <a href="https://scholar.google.com/citations?user=vrVNoZYAAAAJ&hl=en" class="link">View All Publications →</a>
-  </section>
+            <div class="heroAssurance">
+              Commercial work, products, and collaboration live at AstrumArc.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Footer / Contact -->
-  <footer id="contact" class="site-footer">
-    <div class="container footer-inner">
-      <div class="footer-info">
-        <h3>Contact</h3>
-        <p>Email: <a href="mailto:support@astrumarc.com">support@astrumarc.com</a><br>           
-           Location: Blaine, MN, USA</p>
+    <div class="pageLight">
+      <div class="wrap">
+
+        <section class="section arcSection" id="arc">
+          <h2 class="midTitle" style="margin-top:10px;">The arc</h2>
+          <p class="midSub" style="margin-bottom:18px;">
+            I’m driven by complex systems, high-stakes workflows, and tools that must perform when reality is messy.
+          </p>
+
+          <div class="arcGrid">
+            <div class="arcText">
+              <p>
+                I build interactive software where correctness, latency, and usability all matter at the same time.
+                In medicine, that means turning complex anatomy, device behavior, and procedural logic into systems that can teach, guide, and scale.
+              </p>
+              <p>
+                AstrumArc exists because most “cool demos” fail the moment you introduce real constraints:
+                hardware, data quality, clinical variability, performance limits, deployment reality, and the need to actually ship.
+                I optimize for results.
+              </p>
+
+              <div class="oneLiner">
+                <div class="oneLinerLabel">One-liner</div>
+                <div class="oneLinerText">I turn difficult, constraint-heavy problems into production-grade software that people can actually use.</div>
+                <div class="oneLinerActions">
+                  <a class="btn primary" href="https://astrumarc.com/" target="_blank" rel="noopener">See AstrumArc</a>
+                  <a class="btn ghost" href="work/">Work & Research</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="arcImage" aria-label="David photo">
+              <div class="arcImageCard">
+                <img src="img/DavidWaterfront.jpg" alt="David Buyck outdoors near the water" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="operate">
+          <h2 class="midTitle">How I operate</h2>
+          <p class="midSub">
+            Principles I use to build systems that survive contact with reality.
+          </p>
+
+          <div class="cards3">
+            <div class="card">
+              <div class="cardBody">
+                <div class="cardTitle">Build under real constraints</div>
+                <p class="cardText">Performance, latency, hardware, data quality, deployment, and user behavior are first-class requirements.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="cardBody">
+                <div class="cardTitle">Ship across platforms</div>
+                <p class="cardText">Web, mobile, desktop, XR, and cloud-backed systems — whatever the workflow demands.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="cardBody">
+                <div class="cardTitle">Visualize truth</div>
+                <p class="cardText">Interfaces should reduce cognitive load and reveal system state fast and reliably.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="cardBody">
+                <div class="cardTitle">Iterate with domain experts</div>
+                <p class="cardText">Fast feedback loops with clinicians and operators. No guesswork. No detached spec fantasy.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="cardBody">
+                <div class="cardTitle">Own the outcome</div>
+                <p class="cardText">Architecture, implementation, integration, delivery — end-to-end responsibility.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="cardBody">
+                <div class="cardTitle">Rigor over hype</div>
+                <p class="cardText">If it can’t be tested, profiled, deployed, and maintained, it’s not done.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="depth">
+          <h2 class="midTitle">Proof of depth</h2>
+          <p class="midSub">
+            Signals, not a portfolio dump. The full commercial story is on AstrumArc.
+          </p>
+
+          <div class="signals3">
+            <div class="signalCard">
+              <div class="signalTitle">Medical simulation systems</div>
+              <div class="signalText">Interactive training environments designed for repeatability, performance, and realistic workflow behavior.</div>
+            </div>
+
+            <div class="signalCard">
+              <div class="signalTitle">Real-time visualization + decision support</div>
+              <div class="signalText">Displays that help operators interpret signals, context, and state, quickly and reliably.</div>
+            </div>
+
+            <div class="signalCard">
+              <div class="signalTitle">Hardware + software integration</div>
+              <div class="signalText">Device control, tracking, sensors, and automation pipelines that connect into usable tools.</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="ctaBand" id="cta">
+          <h3>Everything Commercial Lives at AstrumArc</h3>
+          <p>
+            Services, products, proof, and the best way to contact me — centralized on AstrumArc.com.
+          </p>
+          <div class="ctaActions">
+            <a class="btn primary" href="https://astrumarc.com/" target="_blank" rel="noopener">Go to AstrumArc</a>
+            <a class="btn ghost" href="https://astrumarc.com/contact/" target="_blank" rel="noopener">Contact</a>
+          </div>
+        </section>
+
       </div>
-      <div class="footer-nav">
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="https://scholar.google.com/citations?user=vrVNoZYAAAAJ&hl=en">Publications</a>
-      </div>
-      <div class="footer-social">
-        <a href="https://www.linkedin.com/in/david-b-97106450">LinkedIn</a> | <a href="https://scholar.google.com/citations?user=vrVNoZYAAAAJ&hl=en">Google Scholar</a>
-      </div>
+
+      <footer class="footerLight">
+        <div class="wrap">
+          <div class="foot">
+            <small>© <span id="year"></span> David Buyck. All rights reserved.</small>
+            <div class="links">
+              <a href="#top">Overview</a>
+              <a href="work/">Work & Research</a>
+              <a href="https://astrumarc.com/" target="_blank" rel="noopener">AstrumArc</a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-    <div class="footer-legal">
-      © 2025 AstrumArc LLC | Privacy Policy
-    </div>
-  </footer>
+  </main>
 
   <script src="js/script.js"></script>
 </body>
