@@ -1,11 +1,11 @@
-<!-- work/index.html -->
+<!-- work/index.html (reduced + points to AstrumArc /products) -->
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>David Buyck | Work</title>
-  <meta name="description" content="Selected work by David Buyck: shipped software across web, mobile, VR, and XR—focused on visualization, simulation, and interactive systems." />
+  <meta name="description" content="David Buyck - selected work and product capabilities across web, mobile, data, AI, real-time, and XR. Full product lines at AstrumArc." />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,6 @@
   <link rel="stylesheet" href="../css/styles.css" />
   <link rel="stylesheet" href="css/work.css" />
 
-  <!-- Optional: use a different hero background for the work page -->
   <link rel="preload" as="image" href="../img/DavidCosmosHero.webp" type="image/webp" fetchpriority="high">
 </head>
 
@@ -28,24 +27,24 @@
         </a>
 
         <nav class="navlinks" aria-label="Primary">
-          <a href="../#top">Overview</a>
-          <a href="#top" aria-current="page">Work</a>          
+          <a href="../#top">Home</a>
+          <a href="#top" aria-current="page">Work</a>
         </nav>
 
         <div class="navcta">
           <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
             <span></span>
           </button>
-          <a class="btn primary" href="https://astrumarc.com/" target="_blank" rel="noopener">Visit AstrumArc</a>
+          <a class="btn primary" href="https://astrumarc.com/products/">Visit AstrumArc</a>
         </div>
       </div>
 
       <div class="mobilemenu" id="mobilemenu" aria-label="Mobile menu">
-        <a href="../#top">Overview</a>
-        <a href="#top">Work</a>        
+        <a href="../#top">Home</a>
+        <a href="#top">Work</a>
         <div class="row">
-          <a class="btn ghost" style="flex:1" href="#projects">Jump to Projects</a>
-          <a class="btn primary" href="https://astrumarc.com/" target="_blank" rel="noopener">Visit AstrumArc</a>
+          <a class="btn ghost" style="flex:1" href="#capabilities">Capabilities</a>
+          <a class="btn primary" href="https://astrumarc.com/products/">Visit AstrumArc</a>
         </div>
       </div>
     </div>
@@ -56,29 +55,24 @@
       <div class="wrap">
         <div class="heroGrid">
           <div class="heroCopy">
-            <div class="kicker"><span class="dot"></span> Selected Work • Shipped Systems</div>
-            <h1>Work<br><span class="em">Web • Mobile • VR • XR • Simulation • Visualization</span></h1>
+            <div class="kicker"><span class="dot"></span> Work • Product systems</div>
+            <h1>Work<br><span class="em">End-to-end software across web, data, AI, real-time, and XR</span></h1>
             <p class="sub">
-              A curated set of shipped applications and interactive systems. The common thread is real-time visualization,
-              high-constraint UX, and end-to-end delivery.
+              This page is a short overview of what I build and how I operate.
+              For full product lines, examples, and entry points, use AstrumArc.
             </p>
 
             <div class="heroActions">
-              <a class="btn primary" href="#projects">View projects</a>
-              <a class="btn heroSecondary" href="#suite">Suite overview</a>
+              <a class="btn primary" href="https://astrumarc.com/products/">Explore product lines</a>              
             </div>
 
             <div class="heroTags" aria-label="Focus areas">
-              <span class="tag">Interactive 3D</span>
-              <span class="tag">Simulation</span>
-              <span class="tag">Cross-platform</span>
-              <span class="tag">Performance</span>
-              <span class="tag">Product delivery</span>
-              <span class="tag">Tooling</span>
-            </div>
-
-            <div class="heroAssurance">
-              Commercial services and products are centralized at AstrumArc.
+              <span class="tag">Visualization</span>
+              <span class="tag">Analytics</span>
+              <span class="tag">Automation</span>
+              <span class="tag">AI/ML</span>
+              <span class="tag">Real-time UI</span>
+              <span class="tag">XR &amp; Simulation</span>
             </div>
           </div>
         </div>
@@ -88,369 +82,106 @@
     <div class="pageLight">
       <div class="wrap">
 
-        <section class="section" id="suite">
-          <h2 class="midTitle">A complete web / mobile / XR suite</h2>
-          <p class="midSub">
-            Cardiac Pro MD is an ecosystem of interactive apps delivered across platforms — designed to keep the workflow consistent
-            while adapting the UI, performance, and interaction model to each device.
-          </p>
-
-          <div class="suiteGrid">
-            <div class="suiteCard">
-              <div class="suiteTitle">What the suite delivers</div>
-              <div class="suiteBullets">
-                <div class="suiteBullet"><span class="suiteDot"></span> A unified set of interactive experiences across mobile, desktop, web, VR, and XR.</div>
-                <div class="suiteBullet"><span class="suiteDot"></span> Consistent interaction patterns: guided workflows, anatomy visualization, and training loops.</div>
-                <div class="suiteBullet"><span class="suiteDot"></span> Built for real constraints: latency, comfort, usability, distribution, and maintenance.</div>
-              </div>
-
-              <div class="suiteActions">
-                <a class="btn primary" href="https://cardiacpromd.com/" target="_blank" rel="noopener">Visit Cardiac Pro MD</a>
-                <a class="btn ghost" href="#featured">Watch featured demos</a>
-              </div>
-            </div>
-
-            <div class="suiteMedia">
-              <!-- Put your multi-device suite image here -->
-              <div class="suiteMediaCard">
-                <img src="../img/projects/Apps.jpg" alt="App suite shown across multiple devices" loading="lazy">
-              </div>
-              <div class="suiteNote">
-                Tip: store all project images in <span class="mono">/img/projects/</span> so both pages can reuse them.
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="featured">
-          <h2 class="midTitle">Featured XR demos</h2>
-          <p class="midSub">
-            Short proof clips — real interaction, real constraints, real systems.
-          </p>
-
-          <div class="featuredGrid">
-            <a class="featuredCard" href="https://youtu.be/-aWqDufTYM4" target="_blank" rel="noopener">
-              <div class="featuredThumb">
-                <img src="../img/projects/EP%20Simulator.jpg" alt="XR Cardiac Cath Simulation thumbnail" loading="lazy">
-                <div class="featuredPlay" aria-hidden="true">▶</div>
-              </div>
-              <div class="featuredBody">
-                <div class="featuredTitle">XR Cardiac Cath Simulation</div>
-                <div class="featuredText">AI-assisted training, planning, and robotic catheter control.</div>
-                <div class="featuredMeta">Watch on YouTube</div>
-              </div>
-            </a>
-
-            <a class="featuredCard" href="https://youtube.com/shorts/XhveNEG2JgU?feature=share" target="_blank" rel="noopener">
-              <div class="featuredThumb">
-                <img src="../img/projects/TEEEMTrackingImage.jpg" alt="XR TEE Simulator EM tracking thumbnail" loading="lazy">
-                <div class="featuredPlay" aria-hidden="true">▶</div>
-              </div>
-              <div class="featuredBody">
-                <div class="featuredTitle">XR TEE Simulator (EM Tracking)</div>
-                <div class="featuredText">Realistic probe control with electromagnetic tracking.</div>
-                <div class="featuredMeta">Watch on YouTube</div>
-              </div>
-            </a>
-          </div>
-        </section>
-
-        <section class="section" id="projects">
-          <h2 class="midTitle">Projects</h2>
-          <p class="midSub">
-            A curated set of shipped applications and prototypes. Use the filters to scan by platform.
-          </p>
-
-          <div class="filters" role="tablist" aria-label="Project filters">
-            <button class="filterBtn isActive" data-filter="all" type="button">All</button>
-            <button class="filterBtn" data-filter="xr" type="button">XR</button>
-            <button class="filterBtn" data-filter="mobile" type="button">Mobile</button>
-            <button class="filterBtn" data-filter="vr" type="button">VR</button>
-            <button class="filterBtn" data-filter="web" type="button">Web</button>
-            <button class="filterBtn" data-filter="other" type="button">Other</button>
-          </div>
-
-          <div class="projectGrid" id="projectGrid">
-
-            <!-- Mobile -->
-            <article class="projectCard" data-tags="mobile">
-              <div class="projectImg">
-                <img src="../img/projects/TEE.jpeg" alt="TEE Simulator app" loading="lazy">
-              </div>
-              <div class="projectBody">
-                <div class="projectTitle">TEE Simulator (Mobile)</div>
-                <p class="projectText">Guided workflow + interactive anatomy visualization in a mobile-first experience.</p>
-                <div class="projectTags">
-                  <span class="chip">Mobile</span><span class="chip">3D</span><span class="chip">Guided flow</span>
-                </div>
-                <div class="projectActions">
-                  <a class="btn ghost btnSm" href="https://apps.apple.com/us/app/umn-tee/id6450793855" target="_blank" rel="noopener">App Store</a>
-                  <a class="btn primary btnSm" href="https://play.google.com/store/apps/details?id=edu.umn.teesimulatorumn" target="_blank" rel="noopener">Google Play</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="projectCard" data-tags="mobile">
-              <div class="projectImg">
-                <img src="../img/projects/TTE.jpeg" alt="TTE Simulator app" loading="lazy">
-              </div>
-              <div class="projectBody">
-                <div class="projectTitle">TTE Simulator (Mobile)</div>
-                <p class="projectText">Training-oriented interaction with real-time overlays and clear progression.</p>
-                <div class="projectTags">
-                  <span class="chip">Mobile</span><span class="chip">3D</span><span class="chip">Training</span>
-                </div>
-                <div class="projectActions">
-                  <a class="btn ghost btnSm" href="https://apps.apple.com/us/app/umn-tte/id6450794725" target="_blank" rel="noopener">App Store</a>
-                  <a class="btn primary btnSm" href="https://play.google.com/store/apps/details?id=edu.UMN.ttesimulatorumn" target="_blank" rel="noopener">Google Play</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="projectCard" data-tags="mobile">
-              <div class="projectImg">
-                <img src="../img/projects/H2L.jpg" alt="A Heart to Learn app" loading="lazy">
-              </div>
-              <div class="projectBody">
-                <div class="projectTitle">A Heart to Learn</div>
-                <p class="projectText">Interactive anatomy and physiology exploration with multiple disease-state models.</p>
-                <div class="projectTags">
-                  <span class="chip">Mobile</span><span class="chip">Education</span><span class="chip">3D</span>
-                </div>
-                <div class="projectActions">
-                  <a class="btn ghost btnSm" href="https://apps.apple.com/us/app/a-heart-to-learn/id6479583417" target="_blank" rel="noopener">App Store</a>
-                  <a class="btn primary btnSm" href="https://play.google.com/store/apps/details?id=com.UMN.HearttoLearn" target="_blank" rel="noopener">Google Play</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="projectCard" data-tags="mobile">
-              <div class="projectImg">
-                <img src="../img/projects/ARHeart.jpg" alt="AR Heart app" loading="lazy">
-              </div>
-              <div class="projectBody">
-                <div class="projectTitle">AR Heart</div>
-                <p class="projectText">Augmented-reality anatomy exploration designed for fast comprehension and interaction.</p>
-                <div class="projectTags">
-                  <span class="chip">Mobile</span><span class="chip">AR</span><span class="chip">3D</span>
-                </div>
-                <div class="projectActions">
-                  <a class="btn ghost btnSm" href="https://apps.apple.com/us/app/umn-heart/id6450314134" target="_blank" rel="noopener">App Store</a>
-                  <a class="btn primary btnSm" href="https://play.google.com/store/apps/details?id=com.UMN.ARHeart" target="_blank" rel="noopener">Google Play</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="projectCard" data-tags="mobile">
-              <div class="projectImg">
-                <img src="../img/projects/Stents.jpeg" alt="Stents app" loading="lazy">
-              </div>
-              <div class="projectBody">
-                <div class="projectTitle">Stents</div>
-                <p class="projectText">Educational tool for interventional workflows and device concepts with structured navigation.</p>
-                <div class="projectTags">
-                  <span class="chip">Mobile</span><span class="chip">Education</span><span class="chip">Workflow</span>
-                </div>
-                <div class="projectActions">
-                  <a class="btn ghost btnSm" href="https://apps.apple.com/us/app/umn-stents/id6450840817" target="_blank" rel="noopener">App Store</a>
-                  <a class="btn primary btnSm" href="https://play.google.com/store/apps/details?id=edu.umn.stentsumn&pcampaignid=web_share" target="_blank" rel="noopener">Google Play</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="projectCard" data-tags="mobile">
-              <div class="projectImg">
-                <img src="../img/projects/CorQuest.jpeg" alt="Coronary Quest app" loading="lazy">
-              </div>
-              <div class="projectBody">
-                <div class="projectTitle">Coronary Quest</div>
-                <p class="projectText">Interactive pathology + intervention concepts presented as an approachable simulation game loop.</p>
-                <div class="projectTags">
-                  <span class="chip">Mobile</span><span class="chip">Simulation</span><span class="chip">3D</span>
-                </div>
-                <div class="projectActions">
-                  <a class="btn ghost btnSm" href="https://apps.apple.com/us/app/coronary-quest/id6481529041" target="_blank" rel="noopener">App Store</a>
-                  <a class="btn primary btnSm" href="https://play.google.com/store/apps/details?id=com.UMN.CoronaryQuest" target="_blank" rel="noopener">Google Play</a>
-                </div>
-              </div>
-            </article>
-
-            <!-- VR -->
-            <article class="projectCard" data-tags="vr xr">
-              <div class="projectImg">
-                <img src="../img/projects/GlobalVR.png" alt="GlobalVR" loading="lazy">
-              </div>
-              <div class="projectBody">
-                <div class="projectTitle">GlobalVR</div>
-                <p class="projectText">Multi-user VR simulator for collaborative education and interactive planning-style exploration.</p>
-                <div class="projectTags">
-                  <span class="chip">VR</span><span class="chip">Multi-user</span><span class="chip">3D</span>
-                </div>
-                <div class="projectActions">
-                  <a class="btn primary btnSm" href="https://youtu.be/NQLOx3VDPwM" target="_blank" rel="noopener">Watch</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="projectCard" data-tags="vr xr">
-              <div class="projectImg">
-                <img src="../img/projects/TEE%20Simulator.jpg" alt="TEE Simulator for Quest" loading="lazy">
-              </div>
-              <div class="projectBody">
-                <div class="projectTitle">TEE Simulator (VR)</div>
-                <p class="projectText">Immersive probe interaction with tight feedback loops and training-oriented UX.</p>
-                <div class="projectTags">
-                  <span class="chip">VR</span><span class="chip">XR</span><span class="chip">Training</span>
-                </div>
-                <div class="projectActions">
-                  <a class="btn primary btnSm" href="https://youtu.be/eD_Zs_7BGNc" target="_blank" rel="noopener">Watch</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="projectCard" data-tags="vr xr">
-              <div class="projectImg">
-                <img src="../img/projects/TTE%20VR.jpg" alt="TTE Simulator for Quest" loading="lazy">
-              </div>
-              <div class="projectBody">
-                <div class="projectTitle">TTE Simulator (VR)</div>
-                <p class="projectText">VR ultrasound training with clear state visibility, guided progression, and spatial intuition.</p>
-                <div class="projectTags">
-                  <span class="chip">VR</span><span class="chip">XR</span><span class="chip">3D</span>
-                </div>
-                <div class="projectActions">
-                  <a class="btn primary btnSm" href="https://youtu.be/Np1c7sZ_z68" target="_blank" rel="noopener">Watch</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="projectCard" data-tags="vr xr">
-              <div class="projectImg">
-                <img src="../img/projects/LBBP.jpg" alt="LBBP Simulator" loading="lazy">
-              </div>
-              <div class="projectBody">
-                <div class="projectTitle">LBBP Simulator</div>
-                <p class="projectText">Procedure trainer built around step clarity, repeatability, and controlled difficulty.</p>
-                <div class="projectTags">
-                  <span class="chip">VR</span><span class="chip">Simulation</span><span class="chip">Workflow</span>
-                </div>
-                <div class="projectActions">
-                  <a class="btn primary btnSm" href="https://youtu.be/8OsEjc_ZXTM" target="_blank" rel="noopener">Watch</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="projectCard" data-tags="vr xr">
-              <div class="projectImg">
-                <img src="../img/projects/Amplatzer.jpg" alt="Amplatzer Simulator" loading="lazy">
-              </div>
-              <div class="projectBody">
-                <div class="projectTitle">Amplatzer Simulator</div>
-                <p class="projectText">Device placement simulation focused on spatial reasoning and constraint-aware interaction.</p>
-                <div class="projectTags">
-                  <span class="chip">VR</span><span class="chip">Simulation</span><span class="chip">3D</span>
-                </div>
-                <div class="projectActions">
-                  <a class="btn primary btnSm" href="https://youtu.be/-I14ebOKlQA" target="_blank" rel="noopener">Watch</a>
-                </div>
-              </div>
-            </article>
-
-            <article class="projectCard" data-tags="vr xr">
-              <div class="projectImg">
-                <img src="../img/projects/HarmonyPlacement.jpg" alt="Harmony Valve Simulator" loading="lazy">
-              </div>
-              <div class="projectBody">
-                <div class="projectTitle">Harmony Valve Simulator</div>
-                <p class="projectText">Placement simulation emphasizing positioning, feedback, and repeatable execution loops.</p>
-                <div class="projectTags">
-                  <span class="chip">VR</span><span class="chip">Simulation</span><span class="chip">Interaction</span>
-                </div>
-                <div class="projectActions">
-                  <a class="btn primary btnSm" href="https://youtu.be/E0n7XWzRoSE" target="_blank" rel="noopener">Watch</a>
-                </div>
-              </div>
-            </article>
-
-            <!-- Web -->
-            <article class="projectCard" data-tags="web xr">
-              <div class="projectImg">
-                <img src="../img/projects/TEEWeb4Chamber.jpg" alt="WebGL heart visualization" loading="lazy">
-              </div>
-              <div class="projectBody">
-                <div class="projectTitle">Interactive Web Visualization</div>
-                <p class="projectText">Web-delivered 3D interaction (WebGL/WebXR) designed to run smoothly in the browser.</p>
-                <div class="projectTags">
-                  <span class="chip">Web</span><span class="chip">WebGL</span><span class="chip">XR</span>
-                </div>
-                <div class="projectActions">
-                  <a class="btn primary btnSm" href="https://play.unity.com/en/games/c4759c57-6ad6-4327-93aa-fbde039fbfb1/umn-tee-simulator" target="_blank" rel="noopener">Explore</a>
-                </div>
-              </div>
-            </article>
-
-            <!-- Other -->
-            <article class="projectCard" data-tags="other">
-              <div class="projectImg">
-                <img src="../img/projects/UniverseSimulator.jpg" alt="Universe Simulator" loading="lazy">
-              </div>
-              <div class="projectBody">
-                <div class="projectTitle">Universe Simulator</div>
-                <p class="projectText">A scientifically grounded interstellar simulation built from real astronomical datasets.</p>
-                <div class="projectTags">
-                  <span class="chip">3D</span><span class="chip">Simulation</span><span class="chip">Data</span>
-                </div>
-                <div class="projectActions">
-                  <a class="btn primary btnSm" href="https://youtu.be/1ywK9dDMjlQ" target="_blank" rel="noopener">Watch</a>
-                </div>
-              </div>
-            </article>
-
-          </div>
-        </section>
-
+        <!-- Quick capability overview (brief) -->
         <section class="section" id="capabilities">
-          <h2 class="midTitle">What these projects prove</h2>
+          <h2 class="midTitle">What I build</h2>
           <p class="midSub">
-            Repeated patterns across domains: real-time interaction, constraint-aware UX, and full-stack delivery.
+            Representative product types I ship. If yours is not listed, that is normal.
+            The complete catalog lives on AstrumArc.
           </p>
 
-          <div class="signals3">
-            <div class="signalCard">
-              <div class="signalTitle">Real-time 3D + interaction</div>
-              <div class="signalText">High-performance rendering and interaction loops that stay responsive under load.</div>
+          <div class="capGrid">
+            <div class="capCard">
+              <div class="capTitle">Product web apps</div>
+              <div class="capText">Portals, dashboards, admin tools, auth/roles, billing, and clean UX.</div>
+              <div class="capTags"><span class="chip">Web</span><span class="chip">Dashboards</span><span class="chip">Admin</span></div>
             </div>
-            <div class="signalCard">
-              <div class="signalTitle">Cross-platform shipping</div>
-              <div class="signalText">Mobile, web, desktop, VR, XR — adapting UX and performance to each environment.</div>
+
+            <div class="capCard">
+              <div class="capTitle">Mobile apps</div>
+              <div class="capText">Offline-first workflows, AR/camera experiences, push, background sync, polish.</div>
+              <div class="capTags"><span class="chip">iOS/Android</span><span class="chip">AR</span><span class="chip">Offline</span></div>
             </div>
-            <div class="signalCard">
-              <div class="signalTitle">Workflow clarity</div>
-              <div class="signalText">Interfaces that reduce cognitive load and make system state obvious.</div>
+
+            <div class="capCard">
+              <div class="capTitle">Desktop + device tools</div>
+              <div class="capText">Cross-platform packaging, performance-first UI, device/file integration.</div>
+              <div class="capTags"><span class="chip">Windows</span><span class="chip">macOS</span><span class="chip">Linux</span></div>
             </div>
-            <div class="signalCard">
-              <div class="signalTitle">Simulation-first thinking</div>
-              <div class="signalText">Building tools around constraints, feedback, and repeatability, not just visuals.</div>
+
+            <div class="capCard">
+              <div class="capTitle">Data + analytics</div>
+              <div class="capText">ETL, validation, monitoring, APIs, dashboards, derived metrics you can trust.</div>
+              <div class="capTags"><span class="chip">Pipelines</span><span class="chip">Observability</span><span class="chip">APIs</span></div>
             </div>
-            <div class="signalCard">
-              <div class="signalTitle">Production delivery</div>
-              <div class="signalText">Packaging, distribution, iteration, maintenance — treating delivery as part of the product.</div>
+
+            <div class="capCard">
+              <div class="capTitle">Real-time systems</div>
+              <div class="capText">Low-latency signal + context displays, streaming, buffering, state management.</div>
+              <div class="capTags"><span class="chip">Streaming</span><span class="chip">Low latency</span><span class="chip">Operator UI</span></div>
             </div>
-            <div class="signalCard">
-              <div class="signalTitle">System-building</div>
-              <div class="signalText">Not one-off demos — coherent systems that can be extended and operated over time.</div>
+
+            <div class="capCard">
+              <div class="capTitle">XR + simulation</div>
+              <div class="capText">Physics-driven interaction, multi-user experiences, cross-device deployments.</div>
+              <div class="capTags"><span class="chip">XR</span><span class="chip">Simulation</span><span class="chip">Multi-user</span></div>
             </div>
+          </div>
+
+          <div class="miniCta">
+            <div class="miniCtaCopy">
+              <div class="miniCtaTitle">Want the full map?</div>
+              <div class="miniCtaText">
+                The detailed product lines, starting points, and examples live on AstrumArc.
+              </div>
+            </div>
+            <div class="miniCtaActions">
+              <a class="btn primary" href="https://astrumarc.com/products/">Go to Products</a>
+              <a class="btn ghost" href="https://astrumarc.com/contact/">Contact</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Lightweight proof (keep, but small) -->
+        <section class="section" id="proof">
+          <h2 class="midTitle">Quick proof</h2>
+          <p class="midSub">
+            A couple short demos. More lives on AstrumArc.
+          </p>
+
+          <div class="featuredGrid featuredGridCompact">
+            <a class="featuredCard" href="https://youtu.be/-aWqDufTYM4">
+              <div class="featuredThumb">
+                <img src="../img/EP Simulator.jpg" alt="XR Cardiac Cath Simulation thumbnail" loading="lazy">
+                <div class="featuredPlay" aria-hidden="true">▶</div>
+              </div>
+              <div class="featuredBody">
+                <div class="featuredTitle">XR cardiac cath simulation</div>
+                <div class="featuredText">AI-assisted training, planning, and robotic catheter control.</div>
+              </div>
+            </a>
+
+            <a class="featuredCard" href="https://youtube.com/shorts/XhveNEG2JgU?feature=share">
+              <div class="featuredThumb">
+                <img src="../img/TEEEMTrackingImage.jpg" alt="XR TEE Simulator EM tracking thumbnail" loading="lazy">
+                <div class="featuredPlay" aria-hidden="true">▶</div>
+              </div>
+              <div class="featuredBody">
+                <div class="featuredTitle">XR TEE EM-tracked probe</div>
+                <div class="featuredText">Realistic control with electromagnetic tracking.</div>
+              </div>
+            </a>
           </div>
         </section>
 
         <section class="ctaBand" id="cta">
-          <h3>Everything Commercial Lives at AstrumArc</h3>
+          <h3>Full product lines live on AstrumArc</h3>
           <p>
-            Services, products, proof, and the best way to contact me — centralized on AstrumArc.com.
+            If you are evaluating capabilities, starting points, and examples, go to AstrumArc Products.
           </p>
           <div class="ctaActions">
-            <a class="btn primary" href="https://astrumarc.com/" target="_blank" rel="noopener">Go to AstrumArc</a>
-            <a class="btn ghost" href="https://astrumarc.com/contact/" target="_blank" rel="noopener">Contact</a>
+            <a class="btn primary" href="https://astrumarc.com/products/">AstrumArc Products</a>
+            <a class="btn ghost" href="https://astrumarc.com/contact/">Contact</a>
           </div>
         </section>
 
@@ -459,11 +190,10 @@
       <footer class="footerLight">
         <div class="wrap">
           <div class="foot">
-            <small>© <span id="year"></span> David Buyck. All rights reserved.</small>
+            <small>© <span id="year">2026</span> AstrumArc. All rights reserved.</small>
             <div class="links">
-              <a href="../#top">Overview</a>
-              <a href="#top">Work</a>
-              <a href="https://astrumarc.com/" target="_blank" rel="noopener">AstrumArc</a>
+              <a href="../#top">Home</a>              
+              <a href="https://astrumarc.com/">AstrumArc</a>
             </div>
           </div>
         </div>
@@ -472,6 +202,5 @@
   </main>
 
   <script src="../js/script.js"></script>
-  <script src="js/work.js"></script>
 </body>
 </html>
