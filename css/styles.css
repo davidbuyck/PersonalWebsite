@@ -565,3 +565,15 @@ button{font:inherit}
   border-radius:12px;
   box-shadow: 0 10px 25px rgba(0,0,0,.35);
 }
+
+/* 1) Prevent the logo from intercepting clicks outside its own pixels */
+.brandLogo{
+  display:block;
+  pointer-events:auto;
+}
+
+/* 2) Guarantee the hamburger is above anything inside the navbar */
+.hamburger{
+  position: relative;
+  z-index: 10;
+}

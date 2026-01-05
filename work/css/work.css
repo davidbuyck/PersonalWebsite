@@ -194,3 +194,24 @@
 .navlinks a[aria-current="page"]:hover{
   background: rgba(255,255,255,.12);
 }
+
+
+.brandLogo{
+  width:160px;
+  height:50px;
+  object-fit:contain;
+  border-radius:12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.35);
+}
+
+/* 1) Prevent the logo from intercepting clicks outside its own pixels */
+.brandLogo{
+  display:block;
+  pointer-events:auto;
+}
+
+/* 2) Guarantee the hamburger is above anything inside the navbar */
+.hamburger{
+  position: relative;
+  z-index: 10;
+}
